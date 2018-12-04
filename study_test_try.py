@@ -53,20 +53,25 @@ filter(is_odd,[1,2,4,5,6,9,10,15])
 #函数可以作为返回值，用于闭包
 
 
+a=0
+cs=(1,2,3,4,5)
+for c in cs:
+    a=a+c
+print(a)
 '''
-def lazy_sum(*args):     #*为可变参数，**又是什么？
-    def sum():
-        ax = 0
-        for n in args
-        ax = ax + n
-    return ax
-return sum
+#*为可变参数，创建一个名为args的空元祖，**两个星号表述创建名为args的空字典，可存放键值对？
+def lazy_sum(*args):
+        a = 0
+        for arg in args:
+            a = a + arg
+return a
 
 
 f=lazy_sum(1,3,5,7,9)
 #f   得不到结果
 #f()   才能得到结果
 '''
+
 
 
 
