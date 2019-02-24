@@ -9,11 +9,11 @@ from lxml import etree
 
 
 class Weibo:
-    cookie = {"Cookie": "TMPTOKEN=go9pDpJdCf0H18DYqWjNq00bsahaKQ9N9QaWn4Uvm3g3CXwkBIzea2XP11V4veKn; SUB=_2A25xdUfpDeRhGeRK61sU9yrPyDuIHXVSlmmhrDV6PUJbkdAKLWXwkW1NU30PrTx6ncgiTjiY-YMufmuA75gkKgIS; SUHB=0cSm61yt-och0G; SCF=ArW5s1AkeIh5lUCYc9OIzSZfX4pwWpTXdBroVC_sXMaGKwsWHZHivg2S-dx14pCZ_M-a5qyb4C2vtr91_O2K1Hc.; SSOLoginState=1550923705"}  # 将your cookie替换成自己的cookie
+    cookie = {"Cookie": "TMPTOKEN=go9pDpJdCf0H18DYqWjNq00bsahaKQ9N9QaWn4Uvm3g3CXwkBIzea2XP11V4veKn; SUB=_2A25xdUfpDeRhGeRK61sU9yrPyDuIHXVSlmmhrDV6PUJbkdAKLWXwkW1NU30PrTx6ncgiTjiY-YMufmuA75gkKgIS; SUHB=0cSm61yt-och0G; SCF=ArW5s1AkeIh5lUCYc9OIzSZfX4pwWpTXdBroVC_sXMaGKwsWHZHivg2S-dx14pCZ_M-a5qyb4C2vtr91_O2K1Hc.; SSOLoginState=1550923705"}  
 
     # Weibo类初始化
     def __init__(self, user_id, filter=0):
-        self.user_id = 5641951279          # 用户id，即需要我们输入的数字，如昵称为“Dear-迪丽热巴”的id为1669879400
+        self.user_id = 5641951279          # 用户id
         self.filter = filter               # 取值范围为0、1，程序默认值为0，代表要爬取用户的全部微博，1代表只爬取用户的原创微博
         self.username = ''                 # 用户名，如“Dear-迪丽热巴”
         self.weibo_num = 0                 # 用户全部微博数
